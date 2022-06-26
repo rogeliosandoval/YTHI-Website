@@ -19,6 +19,10 @@
   width: 70%;
 }
 
+.logo2 {
+  width: 45%
+}
+
 .titleText {
   font-size: 21px;
   font-weight: bold;
@@ -88,17 +92,7 @@
   padding: 40px;
 }
 
-.lazur-bg {
-  background-color: lightgrey;
-  color: #000000;
-}
-
-.red-bg {
-  background-color: lightgrey;
-  color: #000000;
-}
-
-.navy-bg {
+.wbg {
   background-color: lightgrey;
   color: #000000;
 }
@@ -125,6 +119,15 @@
 .icon {
   color: rgb(8,107,181);
   font-size: 36px;
+}
+
+.carousel-inner{
+  height: 165px;
+}
+
+.carousel-caption{
+  color: #000;
+  top: 85%;
 }
 
 @media (min-width: 768px) {
@@ -155,4 +158,11 @@
     padding: .50rem 1rem;
   }
   
+  .carousel-inner{
+    height: 125px;
+  }
+
+  .logo2 {
+    width: 60%
+  }
 }
