@@ -52,6 +52,11 @@
   font-size: 30px;
 }
 
+.fa-certificate {
+  color: rgb(8,107,181);
+  font-size: 30px;
+}
+
 .button-73 {
   appearance: none;
   background-color: #FFFFFF;
@@ -130,6 +135,36 @@
   top: 85%;
 }
 
+.cert {
+  width: 65%;
+}
+
+#videoDiv2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: block;
+  position: relative;
+} 
+
+#video2 {
+  width: 100%;
+  filter: brightness(50%);
+  height: auto
+} 
+
+#videoMessage2 { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 768px) {
   .icon {
     font-size: 42px;
@@ -149,6 +184,11 @@
   }
 
   .fa-clock-o {
+    color: rgb(8,107,181);
+    font-size: 40px;
+  }
+
+  .fa-certificate {
     color: rgb(8,107,181);
     font-size: 40px;
   }
