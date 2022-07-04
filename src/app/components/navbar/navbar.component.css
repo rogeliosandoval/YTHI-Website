@@ -1,9 +1,14 @@
 .navbar {
-  background: rgba(77, 77, 77, 0.507);
+  background: rgb(8,107,181);
 }
 
 .logo {
   width: 85px;
+  transition: 0.3s;
+}
+
+.shrink {
+  width: 50px !important;
 }
 
 .nav-link {
@@ -20,13 +25,27 @@
 
 @media (min-width: 992px) {
 
+  .background {
+    background: orange !important;
+  }
+
   .navbar {
     background: none;
+    transition: 0.3s;
   }
 
   .logo {
-    width: 100px;
+    width: 120px;
+    margin-left: 50px;
     transition: 0.3s;
+  }
+
+  .shrink {
+    width: 70px !important;
+  }
+
+  .links {
+    margin-right: 50px;
   }
 
   .logo:hover {
