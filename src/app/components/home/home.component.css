@@ -139,6 +139,12 @@
   width: 65%;
 }
 
+.smalltext {
+  margin-top: 15px;
+  font-size: 17;
+  font-weight: bold;
+}
+
 #videoDiv2 {
   width: 100%;
   max-width: 1200px;
@@ -165,7 +171,29 @@
   height: 100%;
 }
 
+.box{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+
+.box .text{
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  right: 0;        
+  text-align: center;
+  top: 27%; /* Adjust this value to move the positioned div up and down */
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 60%; /* Set the width of the positioned div */
+}
+
 @media (min-width: 768px) {
+  .group {
+    filter: brightness(40%);
+  }
+
   .icon {
     font-size: 42px;
   }
