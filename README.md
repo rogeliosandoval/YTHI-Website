@@ -1,27 +1,19 @@
-# YthiWebsite
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h1>Your Time Home Inspections Website Two</h1>
+<h3>Framework Used:</h3>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="68px;"/>
+<h3>Languages Used:</h3>
+<p float="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="60px;"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60px;"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="60px;"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="60px;"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="60px;"/>      
+</p>
+<br>
+<b><i>*This is an updated version of the previous website I created with Svelte</i></b>
+<br>
+<br>
+This is a website built for a home inspection comapny that gives their clients a place to reference. Clients can book inspections, learn more about the company, apply for job positions or simply look up contact information. Links to the socials are also provided on the footer where they can always be accessed.
+<br>
+<br>
+Overall the main goal of this project is to make a fully functional website that allows clients to not only book inspections online, but to take care of comments, questions or concerns that they may have while considering getting a home inspection.
