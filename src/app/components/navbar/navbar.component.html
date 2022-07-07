@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark" [ngClass]="{ 'background' : navChange }">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" routerLink="/home">
         <img class="logo" [ngClass]="{ 'shrink' : navChange }" src="../../../assets/logo.png" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav links ml-auto">
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" routerLink="/home">Home</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Reviews</a>
+          <a class="nav-link" routerLink="/reviews">Reviews</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#">Services</a>
