@@ -103,11 +103,25 @@ z-index: 2;
 }
 
 .box {
-    height: 500px;
+    height: auto;
 }
 
 .service-icon {
-    font-size:150px;
+    font-size:25px;
+    padding-bottom: 20px;
+}
+
+.logo2 {
+    width: 45%
+}
+
+.carousel-inner{
+    height: 165px;
+}
+
+.carousel-caption{
+    color: #000;
+    top: 85%;
 }
 
 @media (min-width: 768px) {
@@ -142,5 +156,21 @@ z-index: 2;
       background-color: rgba(255, 139, 30, 0.705);
       z-index: 1;
     }
+
+    .box {
+        height: 500px;
+    }
+
+    .service-icon {
+        font-size:150px;
+    }
+
+    .logo2 {
+        width: 60%
+    }
+
+    .carousel-inner{
+        height: 125px;
+    }
   
-  }
+}
