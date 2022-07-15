@@ -11,13 +11,25 @@
 .big-navi {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 }
 
 .small-navi {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0rem;            /* Footer height */
 }
