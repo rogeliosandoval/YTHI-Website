@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css"; @import "~font-awesome/css/font-awesome.css";
 
+ngb-modal-backdrop {
+    z-index: 1050 !important;
+}
+
 body {
     padding-top: 129px;
     font-family: 'Trebuchet MS', sans-serif;
