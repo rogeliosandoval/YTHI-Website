@@ -57,6 +57,33 @@
 .button-73:active {
     transform: scale(1.025);
 }
+
+.button-730 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: #91befd 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: not-allowed;
+    opacity: 0.5;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
     
 .logo {
     width: 70%;
@@ -118,6 +145,61 @@
     height: 100%;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 4px 20px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(8,107,181);
+  border-left: 2px solid rgb(8,107,181);
+  box-shadow: -3px 3px 5px black;
+  margin: 10px;
+  border-radius: 3px;
+  flex-grow: 1;
+  background: none;
+}
+
+.valid {
+    border-bottom: 3px solid green !important;
+    border-left: 3px solid green !important;
+}
+
+.invalid {
+    border-bottom: 3px solid red !important;
+    border-left: 3px solid red !important;
+}
+
+.show {
+    visibility: visible !important;
+}
+
+.mobile-show {
+    display: block !important;
+}
+
+.form-row {
+  flex-direction: row;
+  display: flex;
+}
+
+.form-panel {
+  background-color: none;
+}
+
+.smalltext {
+    margin-top: 15px;
+    font-size: 17;
+    font-weight: bold;
+}
+
+.icon {
+    color: rgb(8,107,181);
+    font-size: 36px;
+}
+
 @media (min-width: 768px) {
 
     .titleText {
@@ -137,6 +219,11 @@
       font-size: 1.3rem;
       padding: .50rem 1rem;
     }
+
+    .button-730 {
+        font-size: 1.3rem;
+        padding: .50rem 1rem;
+      }
   
     .fa-clock-o {
       color: rgb(8,107,181);
@@ -161,6 +248,14 @@
 
     .carousel-inner{
         height: 125px;
+    }
+
+    .icon {
+        font-size: 42px;
+    }
+
+    .mobile-show {
+        display: none !important;
     }
   
 }

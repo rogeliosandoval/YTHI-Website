@@ -11,15 +11,200 @@
             Join Our Team!
         </div>
         <div class="text-center my-3 d-none d-md-block">
-            <button class="button-73 mt-2 mb-4" role="button">Click Here To Apply</button>
+            <button class="button-73 mt-2 mb-4" role="button" (click)="scroll(target)">Click Here To Apply</button>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="text-center my-3 d-block d-md-none">
-        <button class="button-73 mt-2 mb-3" role="button">Click Here To Apply</button>
+        <button class="button-73 mt-2 mb-3" role="button" (click)="scroll(target2)">Click Here To Apply</button>
     </div>
-    <div class="videoWrapper">
+    <div class="videoWrapper mt-0 mt-md-4">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hzzi7DOtDQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="text-center bodyText mt-4">
+        The Right Choice.
+    </div>
+    <div class="titleText text-center">
+        Home Inspector in San Antonio, TX
+    </div>
+    <br>
+    <div class="bodyText text-center text-md-left">
+        <p>
+            Locally owned (non-franchise) multi-inspector home inspection service looking for full-time home inspectors. We serve home buyers and sellers throughout San Antonio and the surrounding area!
+        </p>
+        <p>
+            If you’re currently a solo inspector who’d like to do more inspections and not worry about answering the phone or missing calls, scheduling inspections, marketing your business, in other words – wearing all the hats – this is a solid opportunity with a friendly, professional company. Do what you do best and spend more time with your family. Or if you already work with a multi-inspector company and are looking for a different environment, this could be a great fit.
+        </p>
+        <p>
+            Professional back-office support, so your focus is outstanding customer service and inspecting. Pleasant work environment, competitive compensation, on-going training, equipment, and a friendly professional team.
+        </p>
+        <div class="text-center mb-4 mb-md-0">
+            <b><a href="tel:2103672945" style="text-decoration:none; color:black;">(210) 367-2945</a></b>
+        </div>
+    </div>
+    <hr class="my-4 py-1">
+    <div class="bodyText mb-3">
+        <b>Job Type:</b> Hourly Pay
+        <br>
+        <br>
+        <b>Job Title:</b> Home Inspector
+        <br>
+        <br>
+        <b>Salary:</b> 45,000-60,000/ depends on level and # of inspections
+        <br>
+        <br>
+        <b>Required Licenses:</b> TREC Real Estate Inspector or Professional Home Inspector
+    </div>
+    <div class="d-flex justify-content-center my-5">
+        <a class="button-73" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Preferred Qualifications
+        </a>
+    </div>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body" style="background:none; border:none;">
+            <ul class="bodyText">
+                <li>Great people skills and team player.</li>
+                <li>Attention to detail, and ability to learn quickly.</li>
+                <li>Good driving record, reliable, presentable vehicle, and valid driver's license.</li>
+                <li>Computer skills including accurate keyboarding and spelling.</li>
+                <li>Excellent written and verbal skills.</li>
+                <li>Positive, upbeat attitude.</li>
+                <li>Available for appointments at flexible times, including some late afternoons and weekends.</li>
+            </ul>
+        </div>
+    </div>
+    <div #target></div>
+    <div class="bodyText my-4">
+        If you have a strong work ethic and want to get going on a great career, this could be for you! Military vets are encouraged to apply. Send your resume along with a cover letter stating why you feel <span #target2></span>you are qualified for this job. We are interviewing now!
+    </div>
+    <div class="titleText2 text-center my-5">
+        <b>Start Your Home Inspection Career</b>
+    </div>
+    <form [formGroup]="careerForm">
+
+        <div class="form-panel">
+            <div class="form-row form-name">
+                <input type="text" formControlName="First" placeholder="First Name" [ngClass]="{'invalid' : First && First.invalid && First.touched, 'valid' : First && First.valid && First.touched}">
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : First && First.invalid && First.touched}">
+                    Please enter a first name
+                </div>
+                <input type="text" formControlName="Last" placeholder="Last Name" [ngClass]="{'invalid' : Last && Last.invalid && Last.touched, 'valid' : Last && Last.valid && Last.touched}">
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Last && Last.invalid && Last.touched}">
+                    Please enter a last name
+                </div>
+                <br>
+            </div>
+            <div>
+                <div class="row text-center" style="color:red;">
+                    <div class="col-md-6 d-none d-md-block" style="visibility:hidden;" [ngClass]="{'show' : First && First.invalid && First.touched}">
+                        Please enter a first name
+                    </div>
+                    <div class="col-md-6 d-none d-md-block" style="visibility:hidden;" [ngClass]="{'show' : Last && Last.invalid && Last.touched}">
+                        Please enter a last name
+                    </div>
+                </div>
+            </div>
+            <div class="form-row form-email">
+                <input type="email" formControlName="Email" placeholder="Email Address" [ngClass]="{'invalid' : Email && Email.invalid && Email.touched, 'valid' : Email && Email.valid && Email.touched}">
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Email && Email.invalid && Email.touched}">
+                    Please enter a valid email
+                </div>
+                <br>
+            </div>
+            <div class="d-none d-md-block text-center" style="color:red; visibility:hidden;" [ngClass]="{'show' : Email && Email.invalid && Email.touched}">
+                Please enter a valid email
+            </div>
+            <div class="form-row">
+                <input type="text" formControlName="Phone" placeholder="Phone Number" [ngClass]="{'invalid' : Phone && Phone.invalid && Phone.touched, 'valid' : Phone && Phone.valid && Phone.touched}">
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Phone && Phone.invalid && Phone.touched}">
+                    Please enter a valid phone number
+                </div>
+                <input type="text" formControlName="Salary" placeholder="Expected Salary" [ngClass]="{'invalid' : Salary && Salary.invalid && Salary.touched, 'valid' : Salary && Salary.valid && Salary.touched}">
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Salary && Salary.invalid && Salary.touched}">
+                    Please enter a numeric ammount
+                </div>
+                <br>
+            </div>
+            <div>
+                <div class="row text-center" style="color:red;">
+                    <div class="col-md-6 d-none d-md-block" style="visibility:hidden;" [ngClass]="{'show' : Phone && Phone.invalid && Phone.touched}">
+                        Please enter a valid phone number
+                    </div>
+                    <div class="col-md-6 d-none d-md-block" style="visibility:hidden;" [ngClass]="{'show' : Salary && Salary.invalid && Salary.touched}">
+                        Please enter a numeric ammount
+                    </div>
+                </div>
+            </div>
+            <div class="bodyText my-2 text-center">
+                When Can You Start?
+            </div>
+            <div class="d-flex justify-content-center mb-2">
+                <input type="date" formControlName="StartDate">
+                <br>
+            </div>
+            <div class="d-md-none text-center" style="color:red; display:none;" [ngClass]="{'mobile-show' : StartDate && StartDate.invalid && StartDate.touched}">
+                Please enter when you can start
+            </div>
+            <div class="d-none d-md-block text-center" style="color:red; visibility:hidden;" [ngClass]="{'show' : StartDate && StartDate.invalid && StartDate.touched}">
+                Please enter when you can start
+            </div>
+            <div class="form-row">
+                <textarea id="w3review" formControlName="Skills" rows="4" cols="50" placeholder="Tell us a little bit about your skills" style="height: 100px !important;"></textarea>
+                <br>
+            </div>
+            <div class="d-flex justify-content-center mt-0 mt-md-4">
+                <select style="height:30px;" formControlName="Education" id="education">
+                    <option value="" disabled selected>Highest Education?</option>
+                    <option value="High School/GED">High School/GED</option>
+                    <option value="Some College">Some College</option>
+                    <option value="Associates">Associates</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                </select>
+            </div>
+        </div>
+
+    </form>
+    <div class="d-flex justify-content-center my-5">
+        <a class="button-73" (click)="onSubmit()" *ngIf="careerForm.valid">
+          Submit Application
+        </a>
+        <div class="button-730" *ngIf="careerForm.invalid">
+            Submit Application
+        </div>
+    </div>
+    <div class="mt-3">
+        <div class="row text-center">
+            <div class="home-card col-md-4 my-4">
+                <div class="home-card-content">
+                    <i class="icon fa fa-phone"></i>
+                    <div class="smalltext">
+                        <a href="tel:2103672945" style="text-decoration:none; color:black;">
+                            (210) 367-2945
+                        </a>
+                        info@yourtimehomeinspections.com
+                    </div>
+                </div>
+            </div>
+            <div class="home-card col-md-4 my-4">
+                <i class="icon fa fa-clock-o"></i>
+                <div class="smalltext">
+                    Monday-Friday 7am-8pm
+                    <br>
+                    Saturday 8am-4pm
+                    <br>
+                    Sunday Closed
+                </div>
+            </div>
+            <div class="home-card col-md-4 my-4">
+                <i class="icon fa fa-map-marker"></i>
+                <div class="smalltext">
+                    1800 NE Interstate 410 Loop
+                    <br>
+                    Suite 216 San Antonio, TX 78209
+                </div>
+            </div>
+        </div>
     </div>
 </div>
