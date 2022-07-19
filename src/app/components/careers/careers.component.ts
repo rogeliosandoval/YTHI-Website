@@ -35,13 +35,13 @@ export class Careers {
     myVar = true;
 
     careerForm = new FormGroup({
-        First: new FormControl('', [Validators.required]),
-        Last: new FormControl('', [Validators.required]),
+        First: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
+        Last: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
         Email: new FormControl('', [Validators.required, Validators.email]),
         Phone: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.minLength(7)]),
         Salary: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.maxLength(6)]),
         StartDate: new FormControl('', [Validators.required]),
-        Skills: new FormControl(''),
+        Skills: new FormControl('', Validators.maxLength(3000)),
         Education: new FormControl('')
     })
 
