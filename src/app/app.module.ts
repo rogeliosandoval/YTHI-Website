@@ -12,13 +12,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { Reviews } from './components/reviews/reviews.component';
 import { Services } from './components/services/services.component';
 import { Careers } from './components/careers/careers.component';
+import { About } from './components/about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'reviews', component: Reviews },
   { path: 'services', component: Services },
-  { path: 'careers', component: Careers }
+  { path: 'careers', component: Careers },
+  { path: 'about', component: About }
 ];
 
 @NgModule({
@@ -29,7 +31,8 @@ const routes: Routes = [
     HomeComponent,
     Reviews,
     Services,
-    Careers
+    Careers,
+    About
   ],
   imports: [
     BrowserModule,
