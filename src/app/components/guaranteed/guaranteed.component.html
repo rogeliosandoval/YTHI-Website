@@ -1,0 +1,124 @@
+<div id="videoDiv2"> 
+    <div id="video-container"></div>
+    <video id="video2" preload="" autoplay="" muted="" playsinline="" loop="">
+        <source src="../../../assets/video/inspecting.mp4" type="video/mp4">
+    </video>
+    <div id="videoMessage2" class="styling">
+        <div class="bodyText" style="color:white;">
+            Best San Antonio Home Inspector
+        </div>
+        <div class="titleText2" style="color:white; font-weight:bold">
+            Inspected Once, <br class="d-block d-md-none">Inspected Right®
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row my-3 my-md-5 my-md-0">
+        <div class="col-md-6 my-3">
+            <img class="chalk" src="../../../assets/chalk.jpeg" alt="200%">
+        </div>
+        <div class="col-md-6 bodyText my-auto">
+            <p class="text-center">
+                <b>Our 200% Satisfaction Guarantee</b>
+            </p>
+            <p>
+                If you are not completely satisfied at the end of the inspection, not only will we refund the inspection fee, we will also pay for another licensed inspector of your choice. We are so confident in what we do that we are willing to back it up to 200%.
+            </p>
+            <p style="font-size: 16px;">
+                <i>*Up to the price of the original inspection</i>
+            </p>
+        </div>
+    </div>
+    <div class="text-center bodyText my-5">
+        on your time!
+    </div>
+    <div class="text-center">
+        <i class="fa fa-clock-o mr-2 d-none d-lg-inline"></i>
+        <b class="titleText2 my-auto">Schedule Inspections <span style="color:rgb(8,107,181);">24hrs</span> A Day Online</b>
+    </div>
+    <div class="text-center my-3">
+        <button class="button-73 mt-2 mb-4" role="button">Schedule An Inspection</button>
+    </div>
+    <div class="my-5">
+        <div class="bodyText">
+            What People Say About Us
+        </div>
+        <div class="titleText">
+            <span style="color:rgb(8,107,181);">|</span> Client Testimonials
+        </div>
+    </div>
+    <div class="my-5 my-md-0">
+        <div class="row">
+            <div class="col-lg-3 my-lg-auto d-flex justify-content-center">
+                <img class="logo2" src="../../../assets/logo.png" alt="logo">
+            </div>
+            <div class="col-lg-9 bodyText my-auto">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <p>
+                                "Always a great experience. Always take great care of my clients with each and every inspection."
+                            </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>
+                                "I would recommend your inspection be conducted by them! Thorough and report submitted in a timely manner!"
+                            </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>
+                                "Always a great experience. Always take great care of my clients with each and every inspection."
+                            </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>
+                                "James was very professional. He was able to answer all my questions. Very pleased with their services. Would definitely recommend the company."
+                            </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>
+                                "Dope service. Third time using them."
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+          </div>
+        </div>
+    </div>
+    <div class="text-center my-3">
+        <a routerLink="/reviews" class="button-73 mt-2 mb-4" style="background-color:yellow; box-shadow: goldenrod 0 -12px 6px inset;" role="button">View Our Reviews</a>
+    </div>
+    <div class="mt-3 mt-md-5">
+        <div class="titleText2 text-center">
+            <i class="fa fa-certificate mr-2"></i>
+            <b>
+                Our Certifications
+            </b>
+        </div>
+    </div>
+    <div class="my-4">
+        <div class="row">
+            <div class="col-md-3 p-3 text-center" *ngFor="let cert of certs">
+                <img class="cert" src="../../../assets/icons/{{cert.imgUrl}}.png" alt="certification">
+            </div>
+        </div>
+    </div>
+</div>
