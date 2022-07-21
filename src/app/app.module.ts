@@ -13,6 +13,9 @@ import { Reviews } from './components/reviews/reviews.component';
 import { Services } from './components/services/services.component';
 import { Careers } from './components/careers/careers.component';
 import { About } from './components/about/about.component';
+import { FAQ } from './components/faq/faq.component';
+import { Contact } from './components/contact/contact.component';
+import { Guaranteed } from './components/guaranteed/guaranteed.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,7 +23,10 @@ const routes: Routes = [
   { path: 'reviews', component: Reviews },
   { path: 'services', component: Services },
   { path: 'careers', component: Careers },
-  { path: 'about', component: About }
+  { path: 'about', component: About },
+  { path: 'faq', component: FAQ },
+  { path: 'contact', component: Contact },
+  { path: 'guaranteed', component: Guaranteed }
 ];
 
 @NgModule({
@@ -32,7 +38,10 @@ const routes: Routes = [
     Reviews,
     Services,
     Careers,
-    About
+    About,
+    FAQ,
+    Contact,
+    Guaranteed
   ],
   imports: [
     BrowserModule,
