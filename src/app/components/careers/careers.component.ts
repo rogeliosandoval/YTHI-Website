@@ -25,57 +25,57 @@ export class NgbdModalContent {
 }
 
 @Component({
-    selector: 'careers',
-    templateUrl: './careers.component.html',
-    styleUrls: ['./careers.component.css']
+  selector: 'careers',
+  templateUrl: './careers.component.html',
+  styleUrls: ['./careers.component.css']
 })
 
 export class Careers {
-    constructor(private modalService: NgbModal) {}
-    myVar = true;
+  constructor(private modalService: NgbModal) {}
+  myVar = true;
 
-    careerForm = new FormGroup({
-        First: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
-        Last: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
-        Email: new FormControl('', [Validators.required, Validators.email]),
-        Phone: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.minLength(7)]),
-        Salary: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.maxLength(6)]),
-        StartDate: new FormControl('', [Validators.required]),
-        Skills: new FormControl('', Validators.maxLength(3000)),
-        Education: new FormControl('')
-    })
+  careerForm = new FormGroup({
+    First: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
+    Last: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
+    Email: new FormControl('', [Validators.required, Validators.email]),
+    Phone: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.minLength(7)]),
+    Salary: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.maxLength(6)]),
+    StartDate: new FormControl('', [Validators.required]),
+    Skills: new FormControl('', Validators.maxLength(3000)),
+    Education: new FormControl('')
+  })
 
-    onSubmit() {
-        this.modalService.open(NgbdModalContent);
-        console.log(this.careerForm.value);
-        this.careerForm.reset();
-    }
+  onSubmit() {
+    this.modalService.open(NgbdModalContent);
+    console.log(this.careerForm.value);
+    this.careerForm.reset();
+  }
 
-    scroll(el: HTMLElement) {
-        el.scrollIntoView({behavior: 'smooth'});
-    }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+  }
 
-    get First() {
-        return this.careerForm.get('First');
-    }
+  get First() {
+    return this.careerForm.get('First');
+  }
 
-    get Last() {
-        return this.careerForm.get('Last');
-    }
+  get Last() {
+    return this.careerForm.get('Last');
+  }
 
-    get Email() {
-        return this.careerForm.get('Email');
-    }
+  get Email() {
+    return this.careerForm.get('Email');
+  }
 
-    get Phone() {
-        return this.careerForm.get('Phone');
-    }
+  get Phone() {
+    return this.careerForm.get('Phone');
+  }
 
-    get Salary() {
-        return this.careerForm.get('Salary');
-    }
+  get Salary() {
+    return this.careerForm.get('Salary');
+  }
 
-    get StartDate() {
-        return this.careerForm.get('StartDate');
-    }
+  get StartDate() {
+    return this.careerForm.get('StartDate');
+  }
 }
