@@ -1,5 +1,5 @@
 .navbar {
-  background: rgb(8,107,181);
+  background: rgba(8, 106, 181, 0.931);
 }
 
 .logo {
@@ -12,7 +12,6 @@
 }
 
 .nav-link {
-  font-size: 32px;
   color: white!important;
 }
 
@@ -21,6 +20,60 @@
 .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
+}
+
+/*Mobile Specific Styling*/
+@media (max-width: 992px) {
+
+  .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 26px;
+    color: white!important;
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+
+  .navbar-collapse ul {
+    height: 100vh;
+  }
+
+  .button-73 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: #91befd 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-73:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+    
+  .button-73:active {
+    transform: scale(1.025);
+  }
+
 }
 
 @media (min-width: 992px) {
