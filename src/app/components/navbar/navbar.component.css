@@ -151,3 +151,21 @@
   }
 
 }
+
+@media (min-width: 1200px) {
+
+  .logo {
+    width: 180px;
+    margin-left: 50px;
+    transition: 0.3s;
+  }
+
+  .shrink {
+    width: 90px !important;
+  }
+
+  .nav-link {
+    font-size: 23px;
+  }
+
+}

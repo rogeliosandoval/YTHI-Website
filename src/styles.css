@@ -18,3 +18,9 @@ body {
         padding-top: 125px;
     }
 }
+
+@media (min-width: 1200px) {
+    body {
+        padding-top: 155px;
+    }
+}

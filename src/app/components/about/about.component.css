@@ -234,3 +234,11 @@
     }
   
 }
+
+@media (min-width: 1200px) {
+    .employee-container {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+}
