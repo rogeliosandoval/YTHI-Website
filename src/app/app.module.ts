@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -19,14 +19,14 @@ import { Guaranteed } from './components/guaranteed/guaranteed.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'reviews', component: Reviews },
-  { path: 'services', component: Services },
-  { path: 'careers', component: Careers },
-  { path: 'about', component: About },
-  { path: 'faq', component: FAQ },
-  { path: 'contact', component: Contact },
-  { path: 'guaranteed', component: Guaranteed }
+  { path: 'home', component: HomeComponent, data: { animation: 'fader' } },
+  { path: 'reviews', component: Reviews, data: { animation: 'fader' } },
+  { path: 'services', component: Services, data: { animation: 'fader' } },
+  { path: 'careers', component: Careers, data: { animation: 'fader' } },
+  { path: 'about', component: About, data: { animation: 'fader' } },
+  { path: 'faq', component: FAQ, data: { animation: 'fader' } },
+  { path: 'contact', component: Contact, data: { animation: 'fader' } },
+  { path: 'guaranteed', component: Guaranteed, data: { animation: 'fader' } }
 ];
 
 @NgModule({
@@ -48,7 +48,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
