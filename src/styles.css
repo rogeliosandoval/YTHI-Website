@@ -19,7 +19,7 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
     body {
         padding-top: 155px;
     }
