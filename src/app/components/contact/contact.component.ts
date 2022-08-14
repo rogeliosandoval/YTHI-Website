@@ -20,42 +20,42 @@ import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
   })
 
   export class NgbdModalContent {
-    //   @Input() name: any;
-  
-    constructor(public activeModal: NgbActiveModal) {}
+  //   @Input() name: any;
+
+  constructor(public activeModal: NgbActiveModal) {}
 }
 
 @Component({
-    selector: 'contact',
-    templateUrl: './contact.component.html',
-    styleUrls: ['./contact.component.css']
+  selector: 'contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
 
 export class Contact {
-    constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal) {}
 
-    contactForm = new FormGroup({
-        Name: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
-        Email: new FormControl('', [Validators.required, Validators.email]),
-        Message: new FormControl('', [Validators.required, Validators.maxLength(3000)])
-    })
+  contactForm = new FormGroup({
+    Name: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]),
+    Email: new FormControl('', [Validators.required, Validators.email]),
+    Message: new FormControl('', [Validators.required, Validators.maxLength(3000)])
+  })
 
-    get Name() {
-        return this.contactForm.get('Name');
-    }
+  get Name() {
+    return this.contactForm.get('Name');
+  }
 
-    get Email() {
-        return this.contactForm.get('Email');
-    }
+  get Email() {
+    return this.contactForm.get('Email');
+  }
 
-    get Message() {
-        return this.contactForm.get('Message');
-    }
+  get Message() {
+    return this.contactForm.get('Message');
+  }
 
-    onSubmit() {
-        this.modalService.open(NgbdModalContent);
-        console.log(this.contactForm.value);
-        this.contactForm.reset();
-    }
+  onSubmit() {
+    this.modalService.open(NgbdModalContent);
+    console.log(this.contactForm.value);
+    this.contactForm.reset();
+  }
 
 }

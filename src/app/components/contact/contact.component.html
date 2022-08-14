@@ -63,11 +63,11 @@
                 <div class="form-panel">
                     <div class="form-row form-email">
                         <input type="text" formControlName="Name" placeholder="Name" [ngClass]="{'invalid' : Name && Name.invalid && Name.touched, 'valid' : Name && Name.valid && Name.touched}">
-                        <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Name && Name.invalid && Name.touched}">
-                            Please enter a name
-                        </div>
                         <br>
                     </div>
+                </div>
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Name && Name.invalid && Name.touched}">
+                    Please enter a name
                 </div>
                 <div class="d-none d-md-block text-center" style="color:red; visibility:hidden;" [ngClass]="{'show' : Name && Name.invalid && Name.touched}">
                     Please enter a name
@@ -76,11 +76,11 @@
                 <div class="form-panel">
                     <div class="form-row form-email">
                         <input type="email" formControlName="Email" placeholder="Email Address" [ngClass]="{'invalid' : Email && Email.invalid && Email.touched, 'valid' : Email && Email.valid && Email.touched}">
-                        <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Email && Email.invalid && Email.touched}">
-                            Please enter a valid email
-                        </div>
                         <br>
                     </div>
+                </div>
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Email && Email.invalid && Email.touched}">
+                    Please enter a valid email
                 </div>
                 <div class="d-none d-md-block text-center" style="color:red; visibility:hidden;" [ngClass]="{'show' : Email && Email.invalid && Email.touched}">
                     Please enter a valid email
@@ -88,10 +88,10 @@
 
                 <div class="form-row">
                     <textarea id="w3review" formControlName="Message" rows="4" cols="20" placeholder="Message" style="height: 155px !important;" [ngClass]="{'invalid' : Message && Message.invalid && Message.touched, 'valid' : Message && Message.valid && Message.touched}"></textarea>
-                    <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Message && Message.invalid && Message.touched}">
-                        Please enter a message
-                    </div>
                     <br>
+                </div>
+                <div class="d-md-none" style="color:red; display:none;" [ngClass]="{'mobile-show' : Message && Message.invalid && Message.touched}">
+                    Please enter a message
                 </div>
                 <div class="d-none d-md-block text-center" style="color:red; visibility:hidden;" [ngClass]="{'show' : Message && Message.invalid && Message.touched}">
                     Please enter a message
