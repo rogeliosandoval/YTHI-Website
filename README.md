@@ -21,4 +21,4 @@ This is a website built for a home inspection company that gives their clients a
 Overall the main goal of this project is to make a fully functional website that allows clients to not only book inspections online, but to take care of any comments, questions or concerns that they may have while considering getting a home inspection.
 <br>
 <br>
-<img src="ythi.gif" width="100%" height="auto">
+<img src="ythi.gif" alt="ythi" width="100%" height="auto">
