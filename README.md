@@ -1,4 +1,4 @@
-<h1>Your Time Home Inspections Website Two</h1>
+<h1>Your Time Home Inspections Website 2</h1>
 <a href="https://your-time-home-inspections.web.app/home"><b>Live Demo</b></a>
 <br>
 <h3>Framework Used:</h3>
