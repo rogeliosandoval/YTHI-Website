@@ -1,6 +1,4 @@
 <h1>Your Time Home Inspections Website 2</h1>
-<a href="https://your-time-home-inspections.web.app/home"><b>Live Demo</b></a>
-<br>
 <h3>Framework Used:</h3>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="68px;"/>
 <h3>Technologies Used:</h3>
